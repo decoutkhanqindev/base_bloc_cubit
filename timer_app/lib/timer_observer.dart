@@ -1,8 +1,8 @@
 import 'dart:developer';
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CounterObserver extends BlocObserver {
-  const CounterObserver();
+class TimerObserver extends BlocObserver {
+  const TimerObserver();
 
   @override
   void onEvent(Bloc bloc, Object? event) {

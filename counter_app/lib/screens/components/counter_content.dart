@@ -1,9 +1,7 @@
-import 'package:counter_app/screens/cubits/counter_cubit.dart';
+import 'package:counter_app/screens/cubit/counter_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-/// A [CounterContent] extends [StatelessWidget] to display the counter and
-/// allows the user to increment or decrement it using [CounterCubit].
 class CounterContent extends StatelessWidget {
   const CounterContent({super.key});
 
