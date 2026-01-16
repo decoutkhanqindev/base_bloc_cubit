@@ -1,0 +1,8 @@
+import 'package:equatable/equatable.dart';
+
+sealed class InfiniteListEvent extends Equatable {
+  @override
+  List<Object?> get props => [];
+}
+
+final class GetList extends InfiniteListEvent {}
