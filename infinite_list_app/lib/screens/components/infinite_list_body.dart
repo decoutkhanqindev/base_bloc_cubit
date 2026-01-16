@@ -62,7 +62,7 @@ class _InfiniteListBodyState extends State<InfiniteListBody> {
   }
 
   void _onScroll() {
-    if (_isBottom) context.read<InfiniteListBloc>().add(GetList());
+    if (_isBottom) context.read<InfiniteListBloc>().add(ListFetched());
   }
 
   bool get _isBottom {

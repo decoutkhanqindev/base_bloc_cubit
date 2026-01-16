@@ -11,7 +11,7 @@ class InfiniteListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => InfiniteListBloc()..add(GetList()),
+      create: (_) => InfiniteListBloc()..add(ListFetched()),
       child: const InfiniteContent(),
     );
   }

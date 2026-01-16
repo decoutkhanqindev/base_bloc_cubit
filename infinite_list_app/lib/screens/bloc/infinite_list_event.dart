@@ -5,4 +5,4 @@ sealed class InfiniteListEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-final class GetList extends InfiniteListEvent {}
+final class ListFetched extends InfiniteListEvent {}

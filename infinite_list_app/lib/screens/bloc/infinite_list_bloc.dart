@@ -9,13 +9,16 @@ import 'package:infinite_list/utils/event_transformer.dart';
 
 class InfiniteListBloc extends Bloc<InfiniteListEvent, InfiniteListState> {
   InfiniteListBloc() : super(const InfiniteListState()) {
-    on<GetList>(
-      _onGetList,
+    on<ListFetched>(
+      _onListFetched,
       transformer: throttleDroppable(const Duration(milliseconds: 100)),
     );
   }
 
-  void _onGetList(GetList event, Emitter<InfiniteListState> emit) async {
+  void _onListFetched(
+    ListFetched event,
+    Emitter<InfiniteListState> emit,
+  ) async {
     if (state.hasReachedMax) return;
 
     try {
